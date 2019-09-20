@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ArticleController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/",name="app_home_page")
      */
     public function show()
     {
@@ -20,5 +20,12 @@ class ArticleController extends AbstractController
             'i like bacon too! Bye some from my site'];
 
         return $this->render('article/show.html.twig',['comments'=>$comments]);
+    }
+
+    /**
+     * @Route("/second",name="second_page")
+     */
+    public function second_page(){
+        return  $this->render('article/second_page_html.twig');
     }
 }
