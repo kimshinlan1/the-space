@@ -15,8 +15,10 @@ class ArticleController extends AbstractController
      */
     public function show()
     {
-        $mang=['BMW','Toyota','Honda'];
+        $comments=['I ate normal rock once. It did not taste like bacon!',
+            "Woohoo! I'm going on an all-asteroid diet!",
+            'i like bacon too! Bye some from my site'];
 
-        return $this->render('article/show.html.twig',['mang'=>$mang]);
+        return $this->render('article/show.html.twig',['comments'=>$comments]);
     }
 }

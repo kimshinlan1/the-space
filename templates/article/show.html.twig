@@ -1,15 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title  %} Welcome Kimshinlan ! {% endblock %}
+{% block title %} Space travelling {% endblock %}
 {% block body %}
+    <h1>Why Asteroids Tastes Like Bacon</h1>
+    <p>Bacon ipsum dolor amet ham porchetta sausage leberkas. Chicken ball tip pastrami swine capicola drumstick.
+        Hamburger short loin ribeye jowl swine capicola tenderloin andouille. Hamburger venison filet mignon chuck
+        brisket pork loin porchetta.
 
-    <h1>Cars</h1>
+        Porchetta short ribs pork loin, drumstick rump jerky strip steak burgdoggen alcatra chicken ham. Chuck shankle
+        pork loin chicken, turkey shank burgdoggen ribeye. Kielbasa drumstick fatback pork chop kevin pork belly cupim
+        corned beef. Pork spare ribs capicola, landjaeger picanha t-bone burgdoggen sausage. Meatloaf bacon jowl
+        turducken, pork loin jerky alcatra buffalo pork chop picanha corned beef shankle. Pork chop ham hock cupim,
+        buffalo burgdoggen capicola swine flank biltong tri-tip. Capicola shank ham buffalo landjaeger, turducken
+        kielbasa burgdoggen biltong pork prosciutto pork belly ribeye.</p>
+
+    <h2>Comments({{ comments|length }}):</h2>
     <ul>
-        {% for item in mang %}
+        {% for item in comments %}
             <li>{{ item }}</li>
         {% endfor %}
     </ul>
 
-    <h1>So phan tu trong mang: {{ mang|length }}</h1>
 
 {% endblock %}
